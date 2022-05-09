@@ -1,0 +1,199 @@
+*{
+    box-sizing: border-box;
+}
+header{
+    background-color: black;
+    /* border: 3px solid black; */
+    height: 75px;
+}
+main > section, main > section + section section{
+    width: 50%;
+    height: 600px;
+    /* border: 1px solid black; */
+    float: left;
+}
+main > section + section section{
+    height: 250px;
+    color: white;        
+}
+
+header > img{
+    clear: both;
+}
+header li, header img, header span{
+    width: 8%;
+    float: left;
+   list-style: none;
+   color: whi
+}
+ul a{
+    text-decoration: none;
+}
+nav li a{
+    color: white;
+}
+
+.mainImg{
+    background: url(TrumpPoint.jpg);
+    height: 530px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    position: relative;
+}
+.mainImg  h2, .mainImg p, .mainImg span {
+    position: absolute;
+    bottom: 0;   
+    color: white;
+    
+}
+
+.mainImg h2{
+    margin-bottom: 10%;
+}
+
+.mainImg p{
+    margin-bottom: 5%;
+}
+
+.topleft{
+    background: url(TrumpPutinBillboard.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 45%;
+    margin: 1%;
+    position: relative;
+}
+   
+h3 {
+    position: absolute;
+    bottom: 0;
+}
+
+.four h2{
+    text-align: right;
+    color: grey;
+}
+.four span{
+    position: absolute;
+    bottom: 0;
+}
+.topright{
+    background: url(TillersonHandsUp.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 45%;
+    margin: 1%;
+    position: relative;
+}
+
+
+.botright{
+    background: url(HeadphoneStock\ Photo.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 45%;
+    margin: 1%;
+    position: relative;
+}
+
+
+.botleft{
+    background: url(Oxford.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 45%;
+    margin: 1%;
+    position: relative;
+}
+
+ .bottomImg section{
+    height: 250px;
+    width: 30%;
+    margin: 1.5%;
+    float: left;
+    /* border: 1px solid black;     */
+}
+
+.botOne{
+    background: url(BBC1.png);
+}
+
+.botTwo{
+    background: url(BBC2.png);
+}
+
+.botThree{
+    background: url(BBC3.png);
+}
+
+
+@media only screen and (max-width: 600px){
+    body{
+        background-color: blueviolet;      
+      }
+    
+      .mainstory {
+        float: none;
+        width: 100%;
+    }
+    .four{
+       display: none;
+    }
+    .bottomImg section{
+        width: 100%;
+        float: none;
+    }
+
+    nav{
+        display: none;
+   }
+}
+
+
+@media (min-width: 601px) and (max-width: 1023px){
+     body{    
+    background-color: orange;
+    }
+
+    .mainstory {
+        float: none;
+        width: 100%;
+    }
+
+    .four{
+        float: none;
+        width: 100%;
+    }
+    
+    form{
+        display: none;       
+    }
+
+    .four h2{
+        text-align: left;
+    }
+
+    @media (min-width: 1024px) and (max-width: 2000px){
+        body{    
+            background-color: red;
+            }
+        
+            .mainstory {
+                float: none;
+                width: 100%;
+            }
+        
+            .four{
+                float: none;
+                width: 100%;
+            }
+            
+            form{
+                display: none;       
+            }
+        
+            .four h2{
+                text-align: left;
+            }
+}
